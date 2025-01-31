@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>{{ page.title | default(value=config.title) | safe }}</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
+</head>
+
+<body>
+  <header>
+    <nav class="crumbs">
+      <ol>
+        {% set sections = config.extra.sections %}
+        {% for section in sections %}
+        <li><a href="{{ section.path }}">{{ section.name }}</a></li>
+        {% endfor %}
+      </ol>
+    </nav>
+  </header>
+  <hr>
+  {% block content %}{% endblock content %}
+  {% block script %}{% endblock script %}
+</body>
+
+</html>

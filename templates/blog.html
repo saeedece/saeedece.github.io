@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if section.pages | length > 0 %}
+<ul class="posts">
+  {% for page in section.pages %}
+  <li><a href="{{ page.permalink | safe}}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Coming soon :)</p>
+{% endif %}
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<img src="img/profile.png"
+  alt="Crayon drawing of mountainous landscape river passing through the middle. Generated using FLUX1.dev."
+  class="profile-img">
+<p>Plume: A feather, especially a large and showy one.</p>
+<p>Hello! My name is Saeed (سعيد). I am a graduate student at UofT working on scientific machine learning and
+  computational electrodynamics.</p>
+<p>My principal research goal is the acceleration of scientific/engineering endeavours with AI. Interested in
+  data-driven/differentiable solvers,
+  codegen, and optimization.</p>
+<hr>
+
+{{ section.content | trim | safe}}
+{% endblock content %}

@@ -1,0 +1,102 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  background: black;
+  color: white;
+}
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.crumbs ol li {
+  display: inline-block;
+  color: black;
+}
+
+.crumbs ol li:not(:last-child)::after {
+  content: "::";
+  padding-left: 5px;
+  padding-right: 2px;
+}
+
+.posts ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.posts li {
+  list-style-type: none;
+}
+
+.posts a {
+  color: black;
+  text-decoration: none;
+}
+
+.posts a:hover {
+  background: black;
+  color: white;
+}
+
+.posts a:visited {
+  color: rebeccapurple;
+}
+
+.posts a:visited:hover {
+  color: white;
+  background-color: rebeccapurple;
+}
+
+.profile-img {
+  max-height: 150px;
+  margin: 10px;
+  float: right;
+}
+
+.project a:visited {
+  color: rebeccapurple;
+}
+
+.project a:visited:hover {
+  color: white;
+  background-color: rebeccapurple;
+}
+
+.project-img {
+  max-height: 200px;
+  float: right;
+}
+
+pre {
+  border: 1px solid #DDD;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 85%;
+}
+
+img,
+iframe,
+video {
+  max-width: 100%;
+}
