@@ -21,11 +21,12 @@
         devShells.default =
           with pkgs;
           mkShell {
-            buildInputs = [
+            nativeBuildInputs = [
               zola
-              pandoc
             ];
-            packages = [ vscode-langservers-extracted ];
+            packages = [
+              vscode-langservers-extracted
+            ];
           };
       }
     );

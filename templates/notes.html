@@ -1,0 +1,18 @@
+{% extends "section.html" %}
+
+{% block content %}
+{% if section.pages | length > 0 %}
+<ul class="note-list">
+  {% for page in section.pages %}
+  <li>
+    <a href="{{ page.permalink | safe}}">
+      {{ page.title }}
+    </a>
+    <span class="date"> {{ page.date }} </span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Coming soon :)</p>
+{% endif %}
+{% endblock content %}
