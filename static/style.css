@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  max-width: 85%;
+  max-width: 800px;
   margin: auto;
-  padding: 1em;
-  line-height: 1.5;
-  font-family: "JetBrains Mono", monospace, sans-serif;
+  padding: 4em;
   font-size: 14px;
+  font-family: serif;
+  line-height: 1.5;
 }
 
 a {
@@ -78,7 +82,7 @@ pre {
 }
 
 code {
-  font-family: "JetBrains Mono", monospace;
+  font-family: monospace;
   font-size: 0.95em;
 }
 
