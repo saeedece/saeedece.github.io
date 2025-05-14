@@ -1,6 +1,6 @@
 base_url = "https://saeedc.com"
-title = "saeedc"
-description = ":)"
+title = "SOS"
+description = "Saeed's Personal Page"
 compile_sass = false
 build_search_index = false
 

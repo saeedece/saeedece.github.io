@@ -1,0 +1,4 @@
+{% if src is not starting_with("http") %}
+{% set src = config.base_url ~ src %}
+{% endif %}
+<img src="{{ src | safe }}" alt=" {{ alt }} " decoding="async" loading="lazy">

@@ -3,11 +3,11 @@
 }
 
 body {
-  max-width: 800px;
+  max-width: 750px;
   margin: auto;
-  padding: 4em;
-  font-size: 14px;
-  font-family: serif;
+  padding: 1em;
+  font-size: 16px;
+  font-family: "Lora", serif;
   line-height: 1.5;
 }
 
@@ -20,13 +20,12 @@ a:visited {
 }
 
 a:hover {
-  background: black;
-  color: white;
+  color: black;
+  text-decoration: underline dotted;
 }
 
 a:visited:hover {
-  background: indigo;
-  color: white;
+  color: indigo;
 }
 
 .crumbs {
@@ -57,11 +56,6 @@ a:visited:hover {
   color: inherit;
 }
 
-.crumbs a:visited:hover {
-  color: white;
-  background: black;
-}
-
 .note-list {
   margin-left: 0px;
   padding-left: 0px;
@@ -81,9 +75,17 @@ pre {
   overflow-x: auto;
 }
 
+img {
+  border: 1px solid #DDD;
+  padding: 0.25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 code {
-  font-family: monospace;
-  font-size: 0.95em;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.90em;
 }
 
 img,
@@ -93,6 +95,5 @@ video {
 }
 
 ul {
-  list-style-type: disc;
   padding-left: 1em;
 }
