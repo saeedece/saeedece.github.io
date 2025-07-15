@@ -6,8 +6,8 @@ body {
   max-width: 750px;
   margin: auto;
   padding: 1em;
-  font-size: 16px;
-  font-family: "Lora", serif;
+  font-size: 20px;
+  font-family: "Atkinson Hyperlegible", sans-serif;
   line-height: 1.5;
 }
 
@@ -46,7 +46,7 @@ a:visited:hover {
 }
 
 .crumbs ol li:not(:last-child)::after {
-  content: "::";
+  content: ">";
   display: inline-block;
   margin-left: 0.25em;
   margin-right: 0.25em;
