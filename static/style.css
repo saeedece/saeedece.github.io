@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,20 +16,20 @@ body {
 }
 
 a {
-  color: black;
+  color: light-dark(black, white);
 }
 
 a:visited {
-  color: indigo;
+  color: light-dark(indigo, aqua);
 }
 
 a:hover {
-  color: black;
+  color: (black, white);
   text-decoration: underline dotted;
 }
 
 a:visited:hover {
-  color: indigo;
+  color: (indigo, aqua);
 }
 
 .crumbs {
@@ -70,7 +74,7 @@ a:visited:hover {
 }
 
 pre {
-  border: 1px solid #DDD;
+  border: 1px solid light-dark(#DDD, #333);
   padding: 1em;
   overflow-x: auto;
 }
